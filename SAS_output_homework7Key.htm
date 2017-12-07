@@ -1,0 +1,4146 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD><META content="IE=5.0000" http-equiv="X-UA-Compatible">
+<TITLE>SAS Output</TITLE>
+<META name=GENERATOR content="MSHTML 11.00.10570.1001">
+<META content="text/html; charset=windows-1252" http-equiv=Content-type>
+<STYLE type=text/css>.aftercaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; PADDING-TOP: 4pt; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.batch {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: 'SAS Monospace', 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; PADDING-BOTTOM: 7px; FONT-STYLE: normal; PADDING-TOP: 7px; PADDING-LEFT: 7px; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; PADDING-RIGHT: 7px; BACKGROUND-COLOR: #fafbfe
+}
+.beforecaption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.body {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.bodydate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; VERTICAL-ALIGN: top; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bycontentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.byline {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.bylinecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.caption {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.cell {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.container {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentfolder {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.contentproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contentprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contents {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.contentsdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.contenttitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.continued {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.data {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: italic; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.dataempty {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datafixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrong {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.datastrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.date {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.document {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+A:link {
+	COLOR: #0000ff
+}
+A:visited {
+	COLOR: #800080
+}
+A:active {
+	COLOR: #800080
+}
+.errorbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.errorcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.extendedpage {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 1pt solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 1pt solid; BORDER-BOTTOM: #000000 1pt solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; TEXT-ALIGN: center; BORDER-LEFT: #000000 1pt solid; BACKGROUND-COLOR: #fafbfe
+}
+.fatalbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.fatalcontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.folderaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.footer {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.footerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.frame {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.graph {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.header {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headeremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headeremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headerfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.headersandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #edf2f9
+}
+.headerstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.headerstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #000000; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #d8dbd3
+}
+.index {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indexaction {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.indexprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.indextitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.layoutcontainer {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.layoutregion {
+	BORDER-TOP: #000000 0px solid; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; BORDER-SPACING: 30px; BORDER-LEFT: #000000 0px solid
+}
+.linecontent {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #c1c1c1 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.list {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.list9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem {
+	LIST-STYLE-TYPE: disc; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem10 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem2 {
+	LIST-STYLE-TYPE: circle; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem3 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem4 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem5 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem6 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem7 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem8 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.listitem9 {
+	LIST-STYLE-TYPE: square; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.note {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notebanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.notecontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.output {
+	FONT-SIZE: x-small; BORDER-TOP: #c1c1c1 1px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #c1c1c1 1px solid; BORDER-COLLAPSE: separate; BORDER-BOTTOM: #c1c1c1 1px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #c1c1c1 1px solid; BACKGROUND-COLOR: #fafbfe
+}
+.pageno {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; VERTICAL-ALIGN: top; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: right; BORDER-SPACING: 0px; BACKGROUND-COLOR: #fafbfe
+}
+.pages {
+	LIST-STYLE-TYPE: decimal; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 8px; BACKGROUND-COLOR: #fafbfe; MARGIN-RIGHT: 8px
+}
+.pagesdate {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; WIDTH: 100%; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesitem {
+	LIST-STYLE-TYPE: none; FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; MARGIN-LEFT: 6pt
+}
+.pagesproclabel {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagesprocname {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.pagestitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: italic; BACKGROUND-COLOR: #fafbfe
+}
+.paragraph {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.parskip {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: bold; FONT-STYLE: normal; BORDER-SPACING: 0px; BORDER-LEFT: #000000 0px solid
+}
+.prepage {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; TEXT-ALIGN: left; BACKGROUND-COLOR: #fafbfe
+}
+.proctitle {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.proctitlefixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier, monospace; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.rowfooter {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooteremphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowfooterstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheader {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasis {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderemphasisfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: italic; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderempty {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrong {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.rowheaderstrongfixed {
+	FONT-SIZE: x-small; BORDER-TOP: #b0b7bb 0px solid; FONT-FAMILY: 'Courier New', Courier, monospace; BORDER-RIGHT: #b0b7bb 1px solid; BORDER-BOTTOM: #b0b7bb 1px solid; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BORDER-LEFT: #b0b7bb 0px solid; BACKGROUND-COLOR: #edf2f9
+}
+.systemfooter {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter10 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter2 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter3 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter4 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter5 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter6 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter7 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter8 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemfooter9 {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle10 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle2 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle3 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle4 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle5 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle6 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle7 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle8 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systemtitle9 {
+	FONT-SIZE: small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.systitleandfootercontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.table {
+	BORDER-TOP: #c1c1c1 1px solid; BORDER-RIGHT: #c1c1c1 0px solid; BORDER-COLLAPSE: collapse; BORDER-BOTTOM: #c1c1c1 0px solid; BORDER-SPACING: 0px; BORDER-LEFT: #c1c1c1 1px solid
+}
+.top_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; BORDER-LEFT: 0px
+}
+.middle_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-BOTTOM: 1px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.bottom_stacked_value {
+	BORDER-TOP: 0px; BORDER-RIGHT: 0px; BORDER-BOTTOM: 0px; PADDING-TOP: 1px; BORDER-LEFT: 0px
+}
+.titleandnotecontainer {
+	FONT-SIZE: x-small; BORDER-TOP: #000000 0px solid; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; BORDER-RIGHT: #000000 0px solid; WIDTH: 100%; BORDER-BOTTOM: #000000 0px solid; FONT-WEIGHT: normal; COLOR: #000000; FONT-STYLE: normal; BORDER-SPACING: 1px; BORDER-LEFT: #000000 0px solid; BACKGROUND-COLOR: #fafbfe
+}
+.titlesandfooters {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.usertext {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warnbanner {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: bold; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontent {
+	FONT-SIZE: x-small; FONT-FAMILY: Arial, 'Albany AMT', Helvetica, Helv; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.warncontentfixed {
+	FONT-SIZE: x-small; FONT-FAMILY: 'Courier New', Courier; FONT-WEIGHT: normal; COLOR: #112277; FONT-STYLE: normal; BACKGROUND-COLOR: #fafbfe
+}
+.l {
+	TEXT-ALIGN: left
+}
+.c {
+	TEXT-ALIGN: center
+}
+.r {
+	TEXT-ALIGN: right
+}
+.d {
+	TEXT-ALIGN: right
+}
+.j {
+	TEXT-ALIGN: justify
+}
+.t {
+	VERTICAL-ALIGN: top
+}
+.m {
+	VERTICAL-ALIGN: middle
+}
+.b {
+	VERTICAL-ALIGN: bottom
+}
+TD {
+	VERTICAL-ALIGN: top
+}
+TH {
+	VERTICAL-ALIGN: top
+}
+.stacked_cell {
+	PADDING-BOTTOM: 0px; PADDING-TOP: 0px; PADDING-LEFT: 0px; PADDING-RIGHT: 0px
+}
+</STYLE>
+
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</SCRIPT>
+</HEAD>
+<BODY class=body onload=startup() onunload=shutdown()>
+<SCRIPT language=javascript type=text/javascript>
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+var _ie64 = _info.indexOf("x64") > 0
+
+//-->
+</SCRIPT>
+
+<DIV class=branch><A name=IDX></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Datasets: Directory Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Directory</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Libref</TH>
+    <TD class="l data">LIBRARY</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Engine</TH>
+    <TD class="l data">V9</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Physical Name</TH>
+    <TD class="l data">C:\MyGithub\N736Fall2017_HELPdataset</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Filename</TH>
+    <TD 
+class="l data">C:\MyGithub\N736Fall2017_HELPdataset</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX1></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Datasets: Library Members" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="r b header" scope=col>#</TH>
+    <TH class="l b header" scope=col>Name</TH>
+    <TH class="l b header" scope=col>Member Type</TH>
+    <TH class="r b header" scope=col>File Size</TH>
+    <TH class="l b header" scope=col>Last Modified</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">FORMATS</TD>
+    <TD class="l data">CATALOG</TD>
+    <TD class="r data">33792</TD>
+    <TD class="l data">11/24/2017 10:24:03</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="l data">HELP</TD>
+    <TD class="l data">DATA</TD>
+    <TD class="r data">175104</TD>
+    <TD class="l data">09/17/2017 06:30:26</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="l data">HELPMKH</TD>
+    <TD class="l data">DATA</TD>
+    <TD class="r data">361472</TD>
+    <TD class="l data">11/24/2017 
+09:21:30</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX2></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The CORR Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Corr: Variables Information" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>5 Variables:</TH>
+    <TD class="l data">cesd cesd1 cesd2 cesd3 
+cesd4</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX3></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Corr: Simple Statistics" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Simple Statistics</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="r b header" scope=col>N</TH>
+    <TH class="r b header" scope=col>Mean</TH>
+    <TH class="r b header" scope=col>Std Dev</TH>
+    <TH class="r b header" scope=col>Sum</TH>
+    <TH class="r b header" scope=col>Minimum</TH>
+    <TH class="r b header" scope=col>Maximum</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd</TH>
+    <TD class="r data">453</TD>
+    <TD class="r data">32.84768</TD>
+    <TD class="r data">12.51446</TD>
+    <TD class="r data">14880</TD>
+    <TD class="r data">1.00000</TD>
+    <TD class="r data">60.00000</TD>
+    <TD class="l data">CESD total score - Baseline</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd1</TH>
+    <TD class="r data">246</TD>
+    <TD class="r data">22.71545</TD>
+    <TD class="r data">14.28658</TD>
+    <TD class="r data">5588</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">56.00000</TD>
+    <TD class="l data">CESD total score - 6mo</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd2</TH>
+    <TD class="r data">209</TD>
+    <TD class="r data">23.58373</TD>
+    <TD class="r data">14.81469</TD>
+    <TD class="r data">4929</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">59.00000</TD>
+    <TD class="l data">CESD total score - 12mo</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd3</TH>
+    <TD class="r data">248</TD>
+    <TD class="r data">22.06855</TD>
+    <TD class="r data">14.28170</TD>
+    <TD class="r data">5473</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">60.00000</TD>
+    <TD class="l data">CESD total score - 18mo</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd4</TH>
+    <TD class="r data">266</TD>
+    <TD class="r data">20.14286</TD>
+    <TD class="r data">14.21885</TD>
+    <TD class="r data">5358</TD>
+    <TD class="r data">0</TD>
+    <TD class="r data">52.00000</TD>
+    <TD class="l data">CESD total score - 
+24mo</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX4></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Corr: Pearson Correlations" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Pearson Correlation 
+      Coefficients <BR>Prob &gt; |r| under H0: Rho=0 <BR>Number of 
+    Observations</TH></TR>
+  <TR>
+    <TH class="c headerempty" scope=col>&nbsp;</TH>
+    <TH class="r b header" scope=col>cesd</TH>
+    <TH class="r b header" scope=col>cesd1</TH>
+    <TH class="r b header" scope=col>cesd2</TH>
+    <TH class="r b header" scope=col>cesd3</TH>
+    <TH class="r b header" scope=col>cesd4</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TH class="l rowheader top_stacked_value" scope=row>cesd</TH></TR>
+        <TR>
+          <TD class="l data bottom_stacked_value">CESD total score - 
+          Baseline</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.00000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&nbsp;</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">453</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.38701</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">246</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.41808</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">209</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.39738</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">248</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.32743</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">266</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TH class="l rowheader top_stacked_value" scope=row>cesd1</TH></TR>
+        <TR>
+          <TD class="l data bottom_stacked_value">CESD total score - 
+        6mo</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.38701</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">246</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.00000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&nbsp;</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">246</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.55487</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">150</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.64067</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">157</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.49010</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">165</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TH class="l rowheader top_stacked_value" scope=row>cesd2</TH></TR>
+        <TR>
+          <TD class="l data bottom_stacked_value">CESD total score - 
+        12mo</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.41808</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">209</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.55487</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">150</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.00000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&nbsp;</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">209</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.74200</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">155</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.59904</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">154</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TH class="l rowheader top_stacked_value" scope=row>cesd3</TH></TR>
+        <TR>
+          <TD class="l data bottom_stacked_value">CESD total score - 
+        18mo</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.39738</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">248</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.64067</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">157</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.74200</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">155</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.00000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&nbsp;</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">248</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.73503</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">197</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l stacked_cell rowheader" scope=row>
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TH class="l rowheader top_stacked_value" scope=row>cesd4</TH></TR>
+        <TR>
+          <TD class="l data bottom_stacked_value">CESD total score - 
+        24mo</TD></TR></TBODY></TABLE></TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.32743</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">266</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.49010</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">165</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.59904</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">154</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.73503</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&lt;.0001</TD></TR>
+        <TR>
+          <TD class="r data bottom_stacked_value">197</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.00000</TD></TR>
+        <TR>
+          <TD class="r data middle_stacked_value">&nbsp;</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">266</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX5></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Class Levels" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="r b header" scope=col>Levels</TH>
+    <TH class="l b header" scope=col>Values</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TD class="r data">2</TD>
+    <TD class="l data">HELP clinic usual 
+care</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX6></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">453</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">98</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX7></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<DIV class="c proctitle">Repeated Measures Analysis of Variance</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Level Information" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Repeated Measures Level 
+      Information</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Dependent&nbsp;Variable</TH>
+    <TH class="r b header" scope=col>cesd</TH>
+    <TH class="r b header" scope=col>cesd1</TH>
+    <TH class="r b header" scope=col>cesd2</TH>
+    <TH class="r b header" scope=col>cesd3</TH>
+    <TH class="r b header" scope=col>cesd4</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>Level of time</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">2</TD>
+    <TD class="r data">3</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">5</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX8></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Partial Correlation Matrix" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 
+      scope=colgroup>Partial&nbsp;Correlation&nbsp;Coefficients&nbsp;from&nbsp;the&nbsp;Error&nbsp;SSCP&nbsp;Matrix&nbsp;/&nbsp;Prob&nbsp;&gt;&nbsp;|r|</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>DF&nbsp;=&nbsp;96</TH>
+    <TH class="r b header" scope=col>cesd</TH>
+    <TH class="r b header" scope=col>cesd1</TH>
+    <TH class="r b header" scope=col>cesd2</TH>
+    <TH class="r b header" scope=col>cesd3</TH>
+    <TH class="r b header" scope=col>cesd4</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.283172</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0049</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.309282</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0021</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.351553</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0004</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.324041</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">0.0012</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd1</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.283172</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0049</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.601680</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.563344</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.518067</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd2</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.309282</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0021</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.601680</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.734762</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.655047</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd3</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.351553</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0004</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.563344</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.734762</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.809959</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd4</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.324041</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0012</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.518067</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.655047</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.809959</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX9></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: SSCP Matrix" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>E = Error SSCP 
+      Matrix<BR>time_N represents the contrast between the nth level of time and 
+      the last</TH></TR>
+  <TR>
+    <TH class="c headerempty" scope=col>&nbsp;</TH>
+    <TH class="r b header" scope=col>time_1</TH>
+    <TH class="r b header" scope=col>time_2</TH>
+    <TH class="r b header" scope=col>time_3</TH>
+    <TH class="r b header" scope=col>time_4</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>time_1</TH>
+    <TD class="r data">21113.5</TD>
+    <TD class="r data">8027.2</TD>
+    <TD class="r data">5882.5</TD>
+    <TD class="r data">3958.0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time_2</TH>
+    <TD class="r data">8027.2</TD>
+    <TD class="r data">15875.6</TD>
+    <TD class="r data">7402.8</TD>
+    <TD class="r data">4177.5</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time_3</TH>
+    <TD class="r data">5882.5</TD>
+    <TD class="r data">7402.8</TD>
+    <TD class="r data">11828.6</TD>
+    <TD class="r data">4714.3</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time_4</TH>
+    <TD class="r data">3958.0</TD>
+    <TD class="r data">4177.5</TD>
+    <TD class="r data">4714.3</TD>
+    <TD class="r data">6459.1</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX10></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Partial Correlation Matrix" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 
+      scope=colgroup>Partial&nbsp;Correlation&nbsp;Coefficients&nbsp;from&nbsp;the&nbsp;Error&nbsp;SSCP&nbsp;Matrix&nbsp;of&nbsp;the&nbsp;Variables&nbsp;Defined&nbsp;by&nbsp;the&nbsp;Specified&nbsp;Transformation&nbsp;/&nbsp;Prob&nbsp;&gt;&nbsp;|r|</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>DF&nbsp;=&nbsp;96</TH>
+    <TH class="r b header" scope=col>time_1</TH>
+    <TH class="r b header" scope=col>time_2</TH>
+    <TH class="r b header" scope=col>time_3</TH>
+    <TH class="r b header" scope=col>time_4</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>time_1</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.438450</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.372236</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0002</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.338929</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">0.0007</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time_2</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.438450</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.540209</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.412539</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time_3</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.372236</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0002</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.540209</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.539346</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time_4</TH>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.338929</TD></TR>
+        <TR>
+          <TD 
+class="r data bottom_stacked_value">0.0007</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.412539</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">0.539346</TD></TR>
+        <TR>
+          <TD 
+    class="r data bottom_stacked_value">&lt;.0001</TD></TR></TBODY></TABLE></TD>
+    <TD class="r stacked_cell data">
+      <TABLE cellSpacing=0 cellPadding=5 width="100%" border=0>
+        <TBODY>
+        <TR>
+          <TD class="r data top_stacked_value">1.000000</TD></TR>
+        <TR>
+          <TD 
+  class="r data bottom_stacked_value">&nbsp;</TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX11></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Sphericity Tests" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Sphericity Tests</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Variables</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Mauchly's Criterion</TH>
+    <TH class="r b header" scope=col>Chi-Square</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;ChiSq</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Transformed Variates</TH>
+    <TD class="r data">9</TD>
+    <TD class="r data">0.2629167</TD>
+    <TD class="r data">126.13293</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Orthogonal Components</TH>
+    <TD class="r data">9</TD>
+    <TD class="r data">0.5631251</TD>
+    <TD class="r data">54.219095</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX12></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Multivariate Tests" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>MANOVA Test Criteria and 
+      Exact F Statistics for the Hypothesis of no time Effect<BR>H = Type III 
+      SSCP Matrix for time<BR>E = Error SSCP Matrix<BR><BR>S=1 M=1 N=45.5</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Statistic</TH>
+    <TH class="r b header" scope=col>Value</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Num&nbsp;DF</TH>
+    <TH class="r b header" scope=col>Den&nbsp;DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Wilks' Lambda</TH>
+    <TD class="r data">0.54045842</TD>
+    <TD class="r data">19.77</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">93</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Pillai's Trace</TH>
+    <TD class="r data">0.45954158</TD>
+    <TD class="r data">19.77</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">93</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Hotelling-Lawley Trace</TH>
+    <TD class="r data">0.85028109</TD>
+    <TD class="r data">19.77</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">93</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Roy's Greatest Root</TH>
+    <TD class="r data">0.85028109</TD>
+    <TD class="r data">19.77</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">93</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX13></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Multivariate Tests" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>MANOVA Test Criteria and 
+      Exact F Statistics for the Hypothesis of no time*treat Effect<BR>H = Type 
+      III SSCP Matrix for time*treat<BR>E = Error SSCP Matrix<BR><BR>S=1 M=1 
+      N=45.5</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Statistic</TH>
+    <TH class="r b header" scope=col>Value</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Num&nbsp;DF</TH>
+    <TH class="r b header" scope=col>Den&nbsp;DF</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Wilks' Lambda</TH>
+    <TD class="r data">0.89574066</TD>
+    <TD class="r data">2.71</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">93</TD>
+    <TD class="r data">0.0350</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Pillai's Trace</TH>
+    <TD class="r data">0.10425934</TD>
+    <TD class="r data">2.71</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">93</TD>
+    <TD class="r data">0.0350</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Hotelling-Lawley Trace</TH>
+    <TD class="r data">0.11639456</TD>
+    <TD class="r data">2.71</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">93</TD>
+    <TD class="r data">0.0350</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Roy's Greatest Root</TH>
+    <TD class="r data">0.11639456</TD>
+    <TD class="r data">2.71</TD>
+    <TD class="r data">4</TD>
+    <TD class="r data">93</TD>
+    <TD class="r data">0.0350</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX14></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<DIV class="c proctitle">Repeated Measures Analysis of Variance</DIV>
+<DIV class="c proctitle">Tests of Hypotheses for Between Subjects Effects</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type III Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Source</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>Type III SS</TH>
+    <TH class="r b header" scope=col>Mean Square</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">445.46661</TD>
+    <TD class="r data">445.46661</TD>
+    <TD class="r data">0.87</TD>
+    <TD class="r data">0.3547</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error</TH>
+    <TD class="r data">96</TD>
+    <TD class="r data">49435.28645</TD>
+    <TD class="r data">514.95090</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX15></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<DIV class="c proctitle">Repeated Measures Analysis of Variance</DIV>
+<DIV class="c proctitle">Univariate Tests of Hypotheses for Within Subject 
+Effects</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Type III Model ANOVA" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" rowSpan=2 scope=col>Source</TH>
+    <TH class="r b header" rowSpan=2 scope=col>DF</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Type III SS</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Mean Square</TH>
+    <TH class="r b header" rowSpan=2 scope=col>F Value</TH>
+    <TH class="r b header" rowSpan=2 scope=col>Pr&nbsp;&gt;&nbsp;F</TH>
+    <TH class="c b header" colSpan=2 scope=colgroup>Adj Pr &gt; F</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>G&nbsp;-&nbsp;G</TH>
+    <TH class="r b header" scope=col>H-F-L</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">11184.55774</TD>
+    <TD class="r data">2796.13944</TD>
+    <TD class="r data">35.14</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time*treat</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">671.21080</TD>
+    <TD class="r data">167.80270</TD>
+    <TD class="r data">2.11</TD>
+    <TD class="r data">0.0791</TD>
+    <TD class="r data">0.0950</TD>
+    <TD class="r data">0.0924</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Error(time)</TH>
+    <TD class="r data">384</TD>
+    <TD class="r data">30556.49532</TD>
+    <TD class="r data">79.57421</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD>
+    <TD class="r data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX16></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Epsilons" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Greenhouse-Geisser Epsilon</TH>
+    <TD class="r data">0.7982</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Huynh-Feldt-Lecoutre Epsilon</TH>
+    <TD class="r data">0.8288</TD></TR></TBODY></TABLE></DIV></DIV><BR>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX17></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The GLM Procedure</DIV>
+<DIV class="c proctitle">Repeated Measures Analysis of Variance</DIV>
+<DIV class="c proctitle">&nbsp;</DIV>
+<DIV class="c proctitle">Means of Within Subjects Effects</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure GLM: Means of Within Subjects Effects" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="l b header" scope=col>Level of<BR>time</TH>
+    <TH class="r b header" scope=col>N</TH>
+    <TH class="r b header" scope=col>Mean</TH>
+    <TH class="r b header" scope=col>Std Dev</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>1</TH>
+    <TH class="r data">98</TH>
+    <TD class="r data">30.69387755</TD>
+    <TD class="r data">11.90461070</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>2</TH>
+    <TH class="r data">98</TH>
+    <TD class="r data">21.22448980</TD>
+    <TD class="r data">12.65606135</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>3</TH>
+    <TH class="r data">98</TH>
+    <TD class="r data">18.93877551</TD>
+    <TD class="r data">13.31057740</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>4</TH>
+    <TH class="r data">98</TH>
+    <TD class="r data">18.52040816</TD>
+    <TD class="r data">13.07017506</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>5</TH>
+    <TH class="r data">98</TH>
+    <TD class="r data">17.51020408</TD>
+    <TD class="r data">13.64819001</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX18></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The CONTENTS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Attributes" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Name</TH>
+    <TD class="l data">WORK.HELPMKH_CESDLONG</TD>
+    <TH class="l rowheader" scope=row>Observations</TH>
+    <TD class="l data">2265</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Member Type</TH>
+    <TD class="l data">DATA</TD>
+    <TH class="l rowheader" scope=row>Variables</TH>
+    <TD class="l data">5</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Engine</TH>
+    <TD class="l data">V9</TD>
+    <TH class="l rowheader" scope=row>Indexes</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created</TH>
+    <TD class="l data">11/24/2017 10:24:12</TD>
+    <TH class="l rowheader" scope=row>Observation Length</TH>
+    <TD class="l data">72</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Last Modified</TH>
+    <TD class="l data">11/24/2017 10:24:12</TD>
+    <TH class="l rowheader" scope=row>Deleted Observations</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Protection</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Compressed</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Type</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Sorted</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Label</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Representation</TH>
+    <TD class="l data">WINDOWS_64</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Encoding</TH>
+    <TD class="l data">wlatin1 Western (Windows)</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX19></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Engine/Host Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Engine/Host Dependent 
+      Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Page Size</TH>
+    <TD class="l data">65536</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Pages</TH>
+    <TD class="l data">3</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>First Data Page</TH>
+    <TD class="l data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Page</TH>
+    <TD class="l data">908</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Obs in First Data Page</TH>
+    <TD class="l data">886</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Repairs</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExtendObsCounter</TH>
+    <TD class="l data">YES</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Filename</TH>
+    <TD class="l data">C:\Users\MKHIGGI\AppData\Local\Temp\SAS Temporary 
+      Files\_TD13892_SON-HIGGINS_\helpmkh_cesdlong.sas7bdat</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Release Created</TH>
+    <TD class="l data">9.0401M1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Host Created</TH>
+    <TD class="l data">X64_8PRO</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX20></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Variables" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Alphabetic List of 
+      Variables and Attributes</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>#</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="l b header" scope=col>Type</TH>
+    <TH class="r b header" scope=col>Len</TH>
+    <TH class="l b header" scope=col>Format</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="l data">COL1</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="l data">_LABEL_</TD>
+    <TD class="l data">Char</TD>
+    <TD class="r data">40</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">LABEL OF FORMER VARIABLE</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="l data">_NAME_</TD>
+    <TD class="l data">Char</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">NAME OF FORMER VARIABLE</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">id</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">Subject ID</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="l data">treat</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">TREAT.</TD>
+    <TD class="l data">Randomization 
+Group</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX21></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The FREQ Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Freq: One-Way Frequencies" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>NAME OF FORMER 
+  VARIABLE</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>_NAME_</TH>
+    <TH class="r b header" scope=col>Frequency</TH>
+    <TH class="r b header" scope=col>Percent</TH>
+    <TH class="r b header" scope=col>Cumulative<BR>Frequency</TH>
+    <TH class="r b header" scope=col>Cumulative<BR>Percent</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd</TH>
+    <TD class="r data">453</TD>
+    <TD class="r data">20.00</TD>
+    <TD class="r data">453</TD>
+    <TD class="r data">20.00</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd1</TH>
+    <TD class="r data">453</TD>
+    <TD class="r data">20.00</TD>
+    <TD class="r data">906</TD>
+    <TD class="r data">40.00</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd2</TH>
+    <TD class="r data">453</TD>
+    <TD class="r data">20.00</TD>
+    <TD class="r data">1359</TD>
+    <TD class="r data">60.00</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd3</TH>
+    <TD class="r data">453</TD>
+    <TD class="r data">20.00</TD>
+    <TD class="r data">1812</TD>
+    <TD class="r data">80.00</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>cesd4</TH>
+    <TD class="r data">453</TD>
+    <TD class="r data">20.00</TD>
+    <TD class="r data">2265</TD>
+    <TD class="r data">100.00</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX22></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The CONTENTS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Attributes" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Name</TH>
+    <TD class="l data">WORK.HELP_CESDLONG</TD>
+    <TH class="l rowheader" scope=row>Observations</TH>
+    <TD class="l data">2265</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Member Type</TH>
+    <TD class="l data">DATA</TD>
+    <TH class="l rowheader" scope=row>Variables</TH>
+    <TD class="l data">5</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Engine</TH>
+    <TD class="l data">V9</TD>
+    <TH class="l rowheader" scope=row>Indexes</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created</TH>
+    <TD class="l data">11/24/2017 10:24:12</TD>
+    <TH class="l rowheader" scope=row>Observation Length</TH>
+    <TD class="l data">72</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Last Modified</TH>
+    <TD class="l data">11/24/2017 10:24:12</TD>
+    <TH class="l rowheader" scope=row>Deleted Observations</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Protection</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Compressed</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Type</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Sorted</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Label</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Representation</TH>
+    <TD class="l data">WINDOWS_64</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Encoding</TH>
+    <TD class="l data">wlatin1 Western (Windows)</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX23></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Engine/Host Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Engine/Host Dependent 
+      Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Page Size</TH>
+    <TD class="l data">65536</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Pages</TH>
+    <TD class="l data">3</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>First Data Page</TH>
+    <TD class="l data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Page</TH>
+    <TD class="l data">908</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Obs in First Data Page</TH>
+    <TD class="l data">886</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Repairs</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExtendObsCounter</TH>
+    <TD class="l data">YES</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Filename</TH>
+    <TD class="l data">C:\Users\MKHIGGI\AppData\Local\Temp\SAS Temporary 
+      Files\_TD13892_SON-HIGGINS_\help_cesdlong.sas7bdat</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Release Created</TH>
+    <TD class="l data">9.0401M1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Host Created</TH>
+    <TD class="l data">X64_8PRO</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX24></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Variables" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Alphabetic List of 
+      Variables and Attributes</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>#</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="l b header" scope=col>Type</TH>
+    <TH class="r b header" scope=col>Len</TH>
+    <TH class="l b header" scope=col>Format</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="l data">cesd</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="l data">cesdlabel</TD>
+    <TD class="l data">Char</TD>
+    <TD class="r data">40</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">LABEL OF FORMER VARIABLE</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="l data">cesdtime</TD>
+    <TD class="l data">Char</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">NAME OF FORMER VARIABLE</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">id</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">Subject ID</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="l data">treat</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">TREAT.</TD>
+    <TD class="l data">Randomization 
+Group</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX25></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The CONTENTS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Attributes" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Name</TH>
+    <TD class="l data">WORK.HELP2</TD>
+    <TH class="l rowheader" scope=row>Observations</TH>
+    <TD class="l data">2265</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Member Type</TH>
+    <TD class="l data">DATA</TD>
+    <TH class="l rowheader" scope=row>Variables</TH>
+    <TD class="l data">6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Engine</TH>
+    <TD class="l data">V9</TD>
+    <TH class="l rowheader" scope=row>Indexes</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Created</TH>
+    <TD class="l data">11/24/2017 10:24:12</TD>
+    <TH class="l rowheader" scope=row>Observation Length</TH>
+    <TD class="l data">80</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Last Modified</TH>
+    <TD class="l data">11/24/2017 10:24:12</TD>
+    <TH class="l rowheader" scope=row>Deleted Observations</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Protection</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Compressed</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Type</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>Sorted</TH>
+    <TD class="l data">NO</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Label</TH>
+    <TD class="l data">&nbsp;</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Representation</TH>
+    <TD class="l data">WINDOWS_64</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Encoding</TH>
+    <TD class="l data">wlatin1 Western (Windows)</TD>
+    <TH class="l rowheader" scope=row>&nbsp;</TH>
+    <TD class="l data">&nbsp;</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX26></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Engine/Host Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Engine/Host Dependent 
+      Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set Page Size</TH>
+    <TD class="l data">65536</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Pages</TH>
+    <TD class="l data">3</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>First Data Page</TH>
+    <TD class="l data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Page</TH>
+    <TD class="l data">817</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Obs in First Data Page</TH>
+    <TD class="l data">796</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Data Set Repairs</TH>
+    <TD class="l data">0</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>ExtendObsCounter</TH>
+    <TD class="l data">YES</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Filename</TH>
+    <TD class="l data">C:\Users\MKHIGGI\AppData\Local\Temp\SAS Temporary 
+      Files\_TD13892_SON-HIGGINS_\help2.sas7bdat</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Release Created</TH>
+    <TD class="l data">9.0401M1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Host Created</TH>
+    <TD class="l data">X64_8PRO</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX27></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Contents: Variables" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Alphabetic List of 
+      Variables and Attributes</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>#</TH>
+    <TH class="l b header" scope=col>Variable</TH>
+    <TH class="l b header" scope=col>Type</TH>
+    <TH class="r b header" scope=col>Len</TH>
+    <TH class="l b header" scope=col>Format</TH>
+    <TH class="l b header" scope=col>Label</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>5</TH>
+    <TD class="l data">cesd</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>4</TH>
+    <TD class="l data">cesdlabel</TD>
+    <TD class="l data">Char</TD>
+    <TD class="r data">40</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">LABEL OF FORMER VARIABLE</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>3</TH>
+    <TD class="l data">cesdtime</TD>
+    <TD class="l data">Char</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">NAME OF FORMER VARIABLE</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="l data">id</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">Subject ID</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>6</TH>
+    <TD class="l data">time</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">&nbsp;</TD>
+    <TD class="l data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="l data">treat</TD>
+    <TD class="l data">Num</TD>
+    <TD class="r data">8</TD>
+    <TD class="l data">TREAT.</TD>
+    <TD class="l data">Randomization 
+Group</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX28></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">The SAS System</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The MEANS Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Means: Summary statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Analysis Variable : cesd 
+    </TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>time</TH>
+    <TH class="r b header" scope=col>N Obs</TH>
+    <TH class="r b header" scope=col>Mean</TH>
+    <TH class="r b header" scope=col>Std Dev</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r t data">0</TH>
+    <TH class="r t data">453</TH>
+    <TD class="r data">32.8476821</TD>
+    <TD class="r data">12.5144598</TD></TR>
+  <TR>
+    <TH class="r t data">1</TH>
+    <TH class="r t data">453</TH>
+    <TD class="r data">22.7154472</TD>
+    <TD class="r data">14.2865830</TD></TR>
+  <TR>
+    <TH class="r t data">2</TH>
+    <TH class="r t data">453</TH>
+    <TD class="r data">23.5837321</TD>
+    <TD class="r data">14.8146862</TD></TR>
+  <TR>
+    <TH class="r t data">3</TH>
+    <TH class="r t data">453</TH>
+    <TD class="r data">22.0685484</TD>
+    <TD class="r data">14.2816995</TD></TR>
+  <TR>
+    <TH class="r t data">4</TH>
+    <TH class="r t data">453</TH>
+    <TD class="r data">20.1428571</TD>
+    <TD class="r data">14.2188516</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX29></A>
+<DIV>
+<DIV class=c><IMG class="c graph" 
+style="BORDER-LEFT-WIDTH: 0px; HEIGHT: 600px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 800px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px" 
+border=0 alt="Plot of cesd by time" 
+src="SAS_output_homework7Key_files/gplot.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX30></A>
+<DIV>
+<DIV class=c><IMG class="c graph" 
+style="BORDER-LEFT-WIDTH: 0px; HEIGHT: 600px; BORDER-RIGHT-WIDTH: 0px; WIDTH: 800px; BORDER-BOTTOM-WIDTH: 0px; BORDER-TOP-WIDTH: 0px" 
+border=0 alt="Plot of cesd by time identified by treat" 
+src="SAS_output_homework7Key_files/gplot1.png"> </DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX31></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">Plot Means with Standard Error Bars from 
+      Calculated Data for Groups</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The Mixed Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">WORK.HELP2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">cesd</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Covariance Structure</TH>
+    <TD class="l data">Variance Components</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Subject Effect</TH>
+    <TD class="l data">id</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Estimation Method</TH>
+    <TD class="l data">REML</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Residual Variance Method</TH>
+    <TD class="l data">Profile</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Fixed Effects SE Method</TH>
+    <TD class="l data">Model-Based</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Degrees of Freedom Method</TH>
+    <TD class="l data">Containment</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX32></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Class Level Information" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="r b header" scope=col>Levels</TH>
+    <TH class="l b header" scope=col>Values</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TD class="r data">2</TD>
+    <TD class="l data">HELP clinic usual 
+care</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX33></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Dimensions" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Dimensions</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Covariance Parameters</TH>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Columns in X</TH>
+    <TD class="r data">6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Columns in Z per Subject</TH>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Subjects</TH>
+    <TD class="r data">453</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Subject</TH>
+    <TD class="r data">5</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX34></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Number of 
+  Observations</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">2265</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">1422</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Not Used</TH>
+    <TD class="r data">843</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX35></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Iteration History" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Iteration History</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Iteration</TH>
+    <TH class="r b header" scope=col>Evaluations</TH>
+    <TH class="r b header" scope=col>-2&nbsp;Res&nbsp;Log&nbsp;Like</TH>
+    <TH class="r b header" scope=col>Criterion</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">11543.07048805</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">11196.56125716</TD>
+    <TD class="r data">0.00000048</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">11196.55917465</TD>
+    <TD class="r data">0.00000000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX36></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criteria 
+met.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX37></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Covariance Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Covariance Parameter 
+      Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Cov Parm</TH>
+    <TH class="l b header" scope=col>Subject</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>Z Value</TH>
+    <TH class="r b header" scope=col>Pr &gt; Z</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="l data">id</TH>
+    <TD class="r data">93.2335</TD>
+    <TD class="r data">8.7266</TD>
+    <TD class="r data">10.68</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Residual</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">102.33</TD>
+    <TD class="r data">4.6053</TD>
+    <TD class="r data">22.22</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX38></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Fit 
+  Statistics</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 Res Log Likelihood</TH>
+    <TD class="r data">11196.6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC (Smaller is Better)</TH>
+    <TD class="r data">11200.6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AICC (Smaller is Better)</TH>
+    <TD class="r data">11200.6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>BIC (Smaller is Better)</TH>
+    <TD class="r data">11208.8</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX39></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Solution for Fixed Effects" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=7 scope=colgroup>Solution for Fixed 
+    Effects</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="l b header" scope=col>Randomization Group</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr &gt; |t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">30.7790</TD>
+    <TD class="r data">0.8700</TD>
+    <TD class="r data">451</TD>
+    <TD class="r data">35.38</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TD class="r data">0.1650</TD>
+    <TD class="r data">1.2296</TD>
+    <TD class="r data">967</TD>
+    <TD class="r data">0.13</TD>
+    <TD class="r data">0.8933</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TH class="l data">usual care</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data" noWrap>-2.6260</TD>
+    <TD class="r data">0.2683</TD>
+    <TD class="r data">967</TD>
+    <TD class="r data" noWrap>-9.79</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time*treat</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TD class="r data" noWrap>-0.4125</TD>
+    <TD class="r data">0.3720</TD>
+    <TD class="r data">967</TD>
+    <TD class="r data" noWrap>-1.11</TD>
+    <TD class="r data">0.2677</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time*treat</TH>
+    <TH class="l data">usual care</TH>
+    <TD class="r data">0</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD>
+    <TD class="r data">.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX40></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Type 3 Tests of Fixed Effects" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Type 3 Tests of Fixed 
+      Effects</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="r b header" scope=col>Num DF</TH>
+    <TH class="r b header" scope=col>Den DF</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">967</TD>
+    <TD class="r data">0.02</TD>
+    <TD class="r data">0.8933</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">967</TD>
+    <TD class="r data">231.91</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time*treat</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">967</TD>
+    <TD class="r data">1.23</TD>
+    <TD class="r data">0.2677</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX41></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Least Squares Means" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=7 scope=colgroup>Least Squares Means</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="l b header" scope=col>Randomization Group</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr &gt; |t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TD class="r data">25.6618</TD>
+    <TD class="r data">0.7614</TD>
+    <TD class="r data">967</TD>
+    <TD class="r data">33.70</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TH class="l data">usual care</TH>
+    <TD class="r data">26.2139</TD>
+    <TD class="r data">0.7686</TD>
+    <TD class="r data">967</TD>
+    <TD class="r data">34.11</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR></DIV>
+<DIV class=branch>
+<P style="PAGE-BREAK-AFTER: always"><BR></P>
+<HR SIZE=3>
+<A name=IDX42></A>
+<TABLE class=systitleandfootercontainer cellSpacing=1 cellPadding=1 rules=none 
+width="100%" summary="Page Layout" border=0 frame=void>
+  <TBODY>
+  <TR>
+    <TD class="c systemtitle">Plot Means with Standard Error Bars from 
+      Calculated Data for Groups</TD></TR></TBODY></TABLE><BR>
+<DIV class="c proctitle">The Mixed Procedure</DIV>
+<P>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Model Information" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Model 
+  Information</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Data Set</TH>
+    <TD class="l data">WORK.HELP2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Dependent Variable</TH>
+    <TD class="l data">cesd</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Covariance Structure</TH>
+    <TD class="l data">Variance Components</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Subject Effect</TH>
+    <TD class="l data">id</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Estimation Method</TH>
+    <TD class="l data">REML</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Residual Variance Method</TH>
+    <TD class="l data">Profile</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Fixed Effects SE Method</TH>
+    <TD class="l data">Model-Based</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Degrees of Freedom Method</TH>
+    <TD class="l data">Containment</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX43></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Class Level Information" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=3 scope=colgroup>Class Level 
+  Information</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Class</TH>
+    <TH class="r b header" scope=col>Levels</TH>
+    <TH class="l b header" scope=col>Values</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TD class="r data">2</TD>
+    <TD class="l data">HELP clinic usual care</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TD class="r data">5</TD>
+    <TD class="l data">0 1 2 3 4</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX44></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Dimensions" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Dimensions</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Covariance Parameters</TH>
+    <TD class="r data">2</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Columns in X</TH>
+    <TD class="r data">18</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Columns in Z per Subject</TH>
+    <TD class="r data">1</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Subjects</TH>
+    <TD class="r data">453</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Max Obs per Subject</TH>
+    <TD class="r data">5</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX45></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Number of Observations" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Number of 
+  Observations</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Read</TH>
+    <TD class="r data">2265</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Used</TH>
+    <TD class="r data">1422</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Number of Observations Not Used</TH>
+    <TD class="r data">843</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX46></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Iteration History" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=4 scope=colgroup>Iteration History</TH></TR>
+  <TR>
+    <TH class="r b header" scope=col>Iteration</TH>
+    <TH class="r b header" scope=col>Evaluations</TH>
+    <TH class="r b header" scope=col>-2&nbsp;Res&nbsp;Log&nbsp;Like</TH>
+    <TH class="r b header" scope=col>Criterion</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="r rowheader" scope=row>0</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">11474.51441143</TD>
+    <TD class="r data">&nbsp;</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>1</TH>
+    <TD class="r data">2</TD>
+    <TD class="r data">11099.61660744</TD>
+    <TD class="r data">0.00000015</TD></TR>
+  <TR>
+    <TH class="r rowheader" scope=row>2</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">11099.61598155</TD>
+    <TD class="r data">0.00000000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX47></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Convergence Status" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <TBODY>
+  <TR>
+    <TD class="c data">Convergence criteria 
+met.</TD></TR></TBODY></TABLE></DIV></DIV><BR><A name=IDX48></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Covariance Parameter Estimates" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=6 scope=colgroup>Covariance Parameter 
+      Estimates</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Cov Parm</TH>
+    <TH class="l b header" scope=col>Subject</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>Z Value</TH>
+    <TH class="r b header" scope=col>Pr &gt; Z</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>Intercept</TH>
+    <TH class="l data">id</TH>
+    <TD class="r data">94.6672</TD>
+    <TD class="r data">8.6802</TD>
+    <TD class="r data">10.91</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>Residual</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">95.2792</TD>
+    <TD class="r data">4.3074</TD>
+    <TD class="r data">22.12</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX49></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Fit Statistics" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=2 scope=colgroup>Fit 
+  Statistics</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>-2 Res Log Likelihood</TH>
+    <TD class="r data">11099.6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AIC (Smaller is Better)</TH>
+    <TD class="r data">11103.6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>AICC (Smaller is Better)</TH>
+    <TD class="r data">11103.6</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>BIC (Smaller is Better)</TH>
+    <TD class="r data">11111.8</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX50></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Type 3 Tests of Fixed Effects" frame=box>
+  <COLGROUP>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=5 scope=colgroup>Type 3 Tests of Fixed 
+      Effects</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="r b header" scope=col>Num DF</TH>
+    <TH class="r b header" scope=col>Den DF</TH>
+    <TH class="r b header" scope=col>F Value</TH>
+    <TH class="r b header" scope=col>Pr&nbsp;&gt;&nbsp;F</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TD class="r data">1</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.16</TD>
+    <TD class="r data">0.6886</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">82.08</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TD class="r data">4</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.75</TD>
+    <TD class="r data">0.5585</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX51></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Least Squares Means" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=8 scope=colgroup>Least Squares Means</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="l b header" scope=col>Randomization Group</TH>
+    <TH class="l b header" scope=col>time</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr &gt; |t|</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">24.3509</TD>
+    <TD class="r data">0.7714</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">31.57</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data">24.7913</TD>
+    <TD class="r data">0.7823</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">31.69</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data">32.8476</TD>
+    <TD class="r data">0.6476</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">50.73</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">23.1866</TD>
+    <TD class="r data">0.8097</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">28.64</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">23.5075</TD>
+    <TD class="r data">0.8600</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">27.33</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">22.3890</TD>
+    <TD class="r data">0.8066</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">27.76</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">20.9249</TD>
+    <TD class="r data">0.7875</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">26.57</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data">32.8400</TD>
+    <TD class="r data">0.9188</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">35.74</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">23.6657</TD>
+    <TD class="r data">1.1156</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">21.21</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">23.1601</TD>
+    <TD class="r data">1.2036</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">19.24</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">22.1896</TD>
+    <TD class="r data">1.1360</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">19.53</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">19.8991</TD>
+    <TD class="r data">1.0814</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">18.40</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data">32.8553</TD>
+    <TD class="r data">0.9127</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">36.00</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">22.7074</TD>
+    <TD class="r data">1.1737</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">19.35</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">23.8549</TD>
+    <TD class="r data">1.2287</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">19.41</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">22.5884</TD>
+    <TD class="r data">1.1453</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">19.72</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">21.9507</TD>
+    <TD class="r data">1.1450</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">19.17</TD>
+    <TD class="r data">&lt;.0001</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX52></A>
+<DIV>
+<DIV align=center>
+<TABLE class=table borderColor=#c1c1c1 cellSpacing=0 cellPadding=5 rules=all 
+summary="Procedure Mixed: Differences of Least Squares Means" frame=box>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <COLGROUP>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL>
+  <COL></COLGROUP>
+  <THEAD>
+  <TR>
+    <TH class="c b header" colSpan=12 scope=colgroup>Differences of Least 
+      Squares Means</TH></TR>
+  <TR>
+    <TH class="l b header" scope=col>Effect</TH>
+    <TH class="l b header" scope=col>Randomization Group</TH>
+    <TH class="l b header" scope=col>time</TH>
+    <TH class="l b header" scope=col>Randomization Group</TH>
+    <TH class="l b header" scope=col>_time</TH>
+    <TH class="r b header" scope=col>Estimate</TH>
+    <TH class="r b header" scope=col>Standard Error</TH>
+    <TH class="r b header" scope=col>DF</TH>
+    <TH class="r b header" scope=col>t&nbsp;Value</TH>
+    <TH class="r b header" scope=col>Pr &gt; |t|</TH>
+    <TH class="l b header" scope=col>Adjustment</TH>
+    <TH class="r b header" scope=col>Adj P</TH></TR></THEAD>
+  <TBODY>
+  <TR>
+    <TH class="l rowheader" scope=row>treat</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TD class="r data" noWrap>-0.4404</TD>
+    <TD class="r data">1.0987</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-0.40</TD>
+    <TD class="r data">0.6886</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.6886</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">9.6610</TD>
+    <TD class="r data">0.8105</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">11.92</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">9.3401</TD>
+    <TD class="r data">0.8608</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">10.85</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">10.4586</TD>
+    <TD class="r data">0.8074</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">12.95</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">11.9227</TD>
+    <TD class="r data">0.7883</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">15.12</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data" noWrap>-0.3209</TD>
+    <TD class="r data">0.9614</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-0.33</TD>
+    <TD class="r data">0.7386</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">0.7976</TD>
+    <TD class="r data">0.9242</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.86</TD>
+    <TD class="r data">0.3884</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.9927</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">2.2617</TD>
+    <TD class="r data">0.9099</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">2.49</TD>
+    <TD class="r data">0.0131</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.1236</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">1.1185</TD>
+    <TD class="r data">0.9559</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">1.17</TD>
+    <TD class="r data">0.2423</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.9376</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">2.5826</TD>
+    <TD class="r data">0.9464</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">2.73</TD>
+    <TD class="r data">0.0065</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.0628</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>time</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">3</TH>
+    <TH class="l data">&nbsp;</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">1.4641</TD>
+    <TD class="r data">0.8913</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">1.64</TD>
+    <TD class="r data">0.1008</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.6544</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">9.1743</TD>
+    <TD class="r data">1.1168</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">8.21</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">9.6799</TD>
+    <TD class="r data">1.2047</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">8.04</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">10.6504</TD>
+    <TD class="r data">1.1372</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">9.37</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">12.9409</TD>
+    <TD class="r data">1.0827</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">11.95</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data" noWrap>-0.01526</TD>
+    <TD class="r data">1.2951</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-0.01</TD>
+    <TD class="r data">0.9906</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">10.1326</TD>
+    <TD class="r data">1.4906</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">6.80</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">8.9851</TD>
+    <TD class="r data">1.5343</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">5.86</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">10.2516</TD>
+    <TD class="r data">1.4683</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">6.98</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">10.8893</TD>
+    <TD class="r data">1.4680</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">7.42</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">0.5056</TD>
+    <TD class="r data">1.3250</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.38</TD>
+    <TD class="r data">0.7028</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">1.4761</TD>
+    <TD class="r data">1.2859</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">1.15</TD>
+    <TD class="r data">0.2513</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">3.7666</TD>
+    <TD class="r data">1.2378</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">3.04</TD>
+    <TD class="r data">0.0024</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.1028</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data" noWrap>-9.1895</TD>
+    <TD class="r data">1.4414</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-6.38</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">0.9583</TD>
+    <TD class="r data">1.6193</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.59</TD>
+    <TD class="r data">0.5541</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data" noWrap>-0.1892</TD>
+    <TD class="r data">1.6596</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-0.11</TD>
+    <TD class="r data">0.9093</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">1.0774</TD>
+    <TD class="r data">1.5988</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.67</TD>
+    <TD class="r data">0.5006</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">1.7151</TD>
+    <TD class="r data">1.5986</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">1.07</TD>
+    <TD class="r data">0.2836</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">0.9705</TD>
+    <TD class="r data">1.3370</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.73</TD>
+    <TD class="r data">0.4681</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">3.2610</TD>
+    <TD class="r data">1.3043</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">2.50</TD>
+    <TD class="r data">0.0126</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.4343</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data" noWrap>-9.6952</TD>
+    <TD class="r data">1.5105</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-6.42</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">0.4527</TD>
+    <TD class="r data">1.6811</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.27</TD>
+    <TD class="r data">0.7878</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data" noWrap>-0.6948</TD>
+    <TD class="r data">1.7200</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-0.40</TD>
+    <TD class="r data">0.6863</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">0.5717</TD>
+    <TD class="r data">1.6614</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.34</TD>
+    <TD class="r data">0.7308</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">1.2094</TD>
+    <TD class="r data">1.6612</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.73</TD>
+    <TD class="r data">0.4668</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">2.2905</TD>
+    <TD class="r data">1.2312</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">1.86</TD>
+    <TD class="r data">0.0631</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.9469</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data" noWrap>-10.6656</TD>
+    <TD class="r data">1.4573</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-7.32</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data" noWrap>-0.5178</TD>
+    <TD class="r data">1.6334</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-0.32</TD>
+    <TD class="r data">0.7513</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data" noWrap>-1.6653</TD>
+    <TD class="r data">1.6734</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-1.00</TD>
+    <TD class="r data">0.3199</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data" noWrap>-0.3987</TD>
+    <TD class="r data">1.6131</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-0.25</TD>
+    <TD class="r data">0.8048</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">3</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">0.2389</TD>
+    <TD class="r data">1.6129</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.15</TD>
+    <TD class="r data">0.8823</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TD class="r data" noWrap>-12.9562</TD>
+    <TD class="r data">1.4151</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-9.16</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data" noWrap>-2.8083</TD>
+    <TD class="r data">1.5960</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-1.76</TD>
+    <TD class="r data">0.0788</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.9751</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data" noWrap>-3.9558</TD>
+    <TD class="r data">1.6369</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-2.42</TD>
+    <TD class="r data">0.0158</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.5127</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data" noWrap>-2.6892</TD>
+    <TD class="r data">1.5752</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-1.71</TD>
+    <TD class="r data">0.0881</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.9842</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">HELP clinic</TH>
+    <TH class="l data">4</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data" noWrap>-2.0516</TD>
+    <TD class="r data">1.5749</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-1.30</TD>
+    <TD class="r data">0.1930</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.9999</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TD class="r data">10.1478</TD>
+    <TD class="r data">1.1749</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">8.64</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data">9.0004</TD>
+    <TD class="r data">1.2298</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">7.32</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">10.2669</TD>
+    <TD class="r data">1.1464</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">8.96</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">0</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">10.9046</TD>
+    <TD class="r data">1.1461</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">9.51</TD>
+    <TD class="r data">&lt;.0001</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">&lt;.0001</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TD class="r data" noWrap>-1.1475</TD>
+    <TD class="r data">1.3933</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data" noWrap>-0.82</TD>
+    <TD class="r data">0.4104</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">0.1191</TD>
+    <TD class="r data">1.3279</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.09</TD>
+    <TD class="r data">0.9286</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">1</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">0.7568</TD>
+    <TD class="r data">1.3340</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.57</TD>
+    <TD class="r data">0.5707</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TD class="r data">1.2665</TD>
+    <TD class="r data">1.3667</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.93</TD>
+    <TD class="r data">0.3543</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">2</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">1.9042</TD>
+    <TD class="r data">1.3716</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">1.39</TD>
+    <TD class="r data">0.1654</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">0.9997</TD></TR>
+  <TR>
+    <TH class="l rowheader" scope=row>treat*time</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">3</TH>
+    <TH class="l data">usual care</TH>
+    <TH class="l data">4</TH>
+    <TD class="r data">0.6377</TD>
+    <TD class="r data">1.2892</TD>
+    <TD class="r data">961</TD>
+    <TD class="r data">0.49</TD>
+    <TD class="r data">0.6210</TD>
+    <TD class="l data">Sidak</TD>
+    <TD class="r data">1.0000</TD></TR></TBODY></TABLE></DIV></DIV><BR><A 
+name=IDX53></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of marginal residuals for cesd. The panel consists of a scatterplot of the residuals, a histogram with normal density, a Q-Q plot, and summary statistics for the residuals and the model fit." 
+src="SAS_output_homework7Key_files/ResidualPanel.png"> </DIV></DIV><BR><A 
+name=IDX54></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of marginal studentized residuals for cesd. The panel consists of a scatterplot of the residuals, a histogram with normal density, a Q-Q plot, and summary statistics for the residuals and the model fit." 
+src="SAS_output_homework7Key_files/StudentPanel.png"> </DIV></DIV><BR><A 
+name=IDX55></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of marginal Pearson residuals for cesd. The panel consists of a scatterplot of the residuals, a histogram with normal density, a Q-Q plot, and summary statistics for the residuals and the model fit." 
+src="SAS_output_homework7Key_files/PearsonPanel.png"> </DIV></DIV><BR><A 
+name=IDX56></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of conditional residuals for cesd. The panel consists of a scatterplot of the residuals, a histogram with normal density, a Q-Q plot, and summary statistics for the residuals and the model fit." 
+src="SAS_output_homework7Key_files/ResidualPanel1.png"> </DIV></DIV><BR><A 
+name=IDX57></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of conditional studentized residuals for cesd. The panel consists of a scatterplot of the residuals, a histogram with normal density, a Q-Q plot, and summary statistics for the residuals and the model fit." 
+src="SAS_output_homework7Key_files/StudentPanel1.png"> </DIV></DIV><BR><A 
+name=IDX58></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Panel of conditional Pearson residuals for cesd. The panel consists of a scatterplot of the residuals, a histogram with normal density, a Q-Q plot, and summary statistics for the residuals and the model fit." 
+src="SAS_output_homework7Key_files/PearsonPanel1.png"> </DIV></DIV><BR><A 
+name=IDX59></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Distribution of Conditional Residuals by treat" 
+src="SAS_output_homework7Key_files/BoxPlot.png"> </DIV></DIV><BR><A 
+name=IDX60></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Distribution of Conditional Residuals by time" 
+src="SAS_output_homework7Key_files/BoxPlot1.png"> </DIV></DIV><BR><A 
+name=IDX61></A>
+<DIV>
+<DIV class=c><IMG class=c style="HEIGHT: 480px; WIDTH: 640px" border=0 
+alt="Distribution of Conditional Residuals by treat*time" 
+src="SAS_output_homework7Key_files/BoxPlot2.png"> 
+</DIV></DIV><BR></DIV></BODY></HTML>
